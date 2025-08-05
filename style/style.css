@@ -1,0 +1,78 @@
+.section-div {
+    max-width: 800px;
+    width: 90%;
+    margin: 40px auto;
+    font-family: sans-serif;
+}
+
+
+.section-div p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-align: justify;
+
+}
+
+
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#carreira {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itens {
+    text-align: justify;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.section-div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.section-div a {
+    color: #007BFF;
+    text-decoration: none;
+
+}
