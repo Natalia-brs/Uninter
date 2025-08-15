@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho - Natalia Brasil </title>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/estilo/estilo.css">
 </head>
 
 <body>
@@ -54,17 +54,33 @@
 
 
         <section id="contato">
-            <div class="section-div">
-                <h3>Contato</h3>
-                <p>E-mail: ntla.brs@gmail.com</p>
-                <a href="https://www.linkedin.com/in/natalia-brasil/" target="_blank">Meu Linkedin</a>
-            </div>
+            <form action="/enviar-contato" method="post" id="formulario-contato">
+                <h3>Preencha o formulario para contato</h3>
+
+                <div>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
         </section>
     </main>
 
     <footer>
         <P>Criado por Natalia Brasil - 2024. <br>
             Trabalho para a disciplina de Fundamentos de Programacao Web - UNINTER</P>
+        <P> Conecte-se comigo: </P><a href="SEU_LINK_DO_LINKEDIN" target="_blank">LinkedIn</a>.</p>
     </footer>
 
 

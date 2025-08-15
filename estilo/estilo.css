@@ -1,0 +1,307 @@
+/* bg global*/
+main {
+    background-color: #f7f9fc;
+}
+
+.section-div {
+    max-width: 800px;
+    width: 90%;
+    margin: 40px auto;
+    font-family: sans-serif;
+    padding: 5px 5px 40px 10px;
+    box-sizing: border-box;
+}
+
+section:not(:last-of-type) .section-div {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.section-div p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.itens {
+    text-align: justify;
+}
+
+.section-div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos da navbar */
+.menu {
+    background-color: #34495e;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+}
+
+/* Estilos da ul da navbar */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* ancoras da navbar */
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* adicionando o efeito de hover nos links da navbar */
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: center;
+}
+
+.menu a:hover {
+    color: #F8F9FA;
+}
+
+.menu a:hover::after {
+    background-color: #F8F9FA;
+    transform: scaleX(1);
+}
+
+/* Estilos das Seções */
+
+/* Seção "Sobre" */
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    margin-top: 100px;
+}
+
+/* Seção "Carreira" */
+#carreira {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Seção "Projetos" */
+#projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+/* estilizando as tags dentro das secoes */
+.section-div h3 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.section-div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-div li {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-div li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.section-div a {
+    text-decoration: none;
+    line-height: 1.6;
+    color: #007bff;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+#projetos a:hover {
+    color: #004185;
+    text-decoration: underline;
+}
+
+/* Seção "Contato" */
+#contato {
+    background-color: #EDF2F7;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilizando o formulario */
+#formulario-contato {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+#formulario-contato label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+#formulario-contato input[type="text"],
+#formulario-contato input[type="email"],
+#formulario-contato textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+#formulario-contato input:focus,
+#formulario-contato textarea:focus {
+    border-color: #004185;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 65, 133, 0.3);
+}
+
+#formulario-contato textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#formulario-contato button {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(73, 89, 104);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formulario-contato button:hover {
+    background-color: #004185;
+}
+
+#contato a {
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+#contato:hover a {
+    text-decoration: underline;
+    color: #004185;
+}
+
+/* Estilos do Footer */
+footer {
+    background-color: #F8F9FA;
+    color: #6c757d;
+    padding: 30px 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer p:last-of-type {
+    margin-bottom: 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Animações (keyframes) para a animacao das secoes ao clicar na navbar*/
+@keyframes section-highlight-fade {
+    from {
+        background-color: #F8F9FA;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    to {
+        background-color: transparent;
+    }
+}
+
+/* Classes de animação */
+#sobre.section-efect .section-div,
+#carreira.section-efect .section-div,
+#projetos.section-efect .section-div,
+#contato.section-efect .section-div {
+    animation-name: section-highlight-fade;
+    animation-duration: 5s;
+    /* Duração de 5s para ver melhor o efeito*/
+    animation-timing-function: ease-out;
+}
+
+/* Keyframe para realizar a animacao da secao selecionada*/
+@keyframes section-highlight-fade {
+    from {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    to {
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
